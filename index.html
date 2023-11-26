@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <h1>Todo List</h1>
+        <input type="text" id="iteminput"><button onclick="todolist.add()">Add</button>
+        <table class="w3-table-all">
+            <thead>
+                <tr>
+                    <th>
+                        Task
+                    </th>
+                </tr>
+            </thead>
+            <tbody id = "itemslist">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="TodoList.js"></script>
+<script>
+    const todolist = new TodoList()
+    todolist.updateTable()
+</script>
+</html>
